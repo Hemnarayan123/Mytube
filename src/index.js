@@ -17,10 +17,10 @@ connectDB()
     });
 
    // if error first check here ....................
-    app.on("error", (error) => {
-      console.log("ERROR", error);
-      throw error;
-    });
+    // app.on("error", (error) => {
+    //   console.log("ERROR", error);
+    //   throw error;
+    // });
   })
   .catch((error) => {
     console.log("MONGO db connection failed !!!", error);
